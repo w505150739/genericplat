@@ -7,6 +7,13 @@
     <groupId>com.generic</groupId>
     <artifactId>genericplat</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>generic-common-modle</module>
+        <module>generic-common</module>
+        <module>generic-service-admin</module>
+        <module>generic-admin-api</module>
+        <module>generic-codegenerate</module>
+    </modules>
     <packaging>pom</packaging>
 
     <name>genericplat</name>
@@ -56,8 +63,8 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
                 <version>2.0.0.RELEASE</version>
-                <type> pom </type>
-                <scope> import </scope>
+                <type>pom</type>
+                <scope>import</scope>
             </dependency>
             <!-- mysql 连接池 -->
             <dependency>
