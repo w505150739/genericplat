@@ -8,5 +8,6 @@ public class GenericCodegenerateApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(GenericCodegenerateApplication.class, args);
+
 	}
 }
