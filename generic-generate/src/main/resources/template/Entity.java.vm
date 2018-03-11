@@ -1,7 +1,12 @@
-package ${package}.${moduleName}.entity;
+package ${package}.entity;
+
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
 import java.io.Serializable;
-import java.util.Date;
+import java.sql.Timestamp;
+
 #if(${hasBigDecimal})
 import java.math.BigDecimal;
 #end
@@ -14,6 +19,9 @@ import java.math.BigDecimal;
  * @email ${email}
  * @date ${datetime}
  */
+@Setter
+@Getter
+@ToString
 public class ${className}Entity implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
@@ -22,7 +30,7 @@ public class ${className}Entity implements Serializable {
 	private $column.attrType $column.attrname;
 #end
 
-#foreach ($column in $columns)
+#*#foreach ($column in $columns)
 	/**
 	 * 设置：${column.comments}
 	 */
@@ -35,5 +43,5 @@ public class ${className}Entity implements Serializable {
 	public $column.attrType get${column.attrName}() {
 		return $column.attrname;
 	}
-#end
+#end*#
 }
