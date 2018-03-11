@@ -4,7 +4,6 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<artifactId>generic-admin-api</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>generic-admin-api</name>
