@@ -13,6 +13,7 @@
         <module>generic-admin-api</module>
         <module>generic-codegenerate</module>
         <module>generic-core</module>
+        <module>generic-generate</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -26,8 +27,6 @@
         <!-- 日志实现-->
         <log4j.version>1.2.14</log4j.version>
         <slf4j-log4j12.version>1.7.7</slf4j-log4j12.version>
-        <!-- Jackson JSON转换 -->
-        <jackson.version>2.8.6</jackson.version>
         <!-- alibaba json工具 -->
         <fastjson.version>1.2.23</fastjson.version>
         <!-- 数据库连接池 -->
@@ -140,12 +139,6 @@
                     <groupId>org.slf4j</groupId>
                     <artifactId>slf4j-log4j12</artifactId>
                 </exclusion></exclusions>
-            </dependency>
-            <!-- Jackson Json处理工具包 -->
-            <dependency>
-                <groupId>com.fasterxml.jackson.core</groupId>
-                <artifactId>jackson-databind</artifactId>
-                <version>${jackson.version}</version>
             </dependency>
             <!-- Ailibaba Json处理工具包 -->
             <dependency>
